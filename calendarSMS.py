@@ -13,8 +13,7 @@ Adapted from Automate the Boring Stuff with Python
 https://automatetheboringstuff.com/chapter16/
 """
 
-import win32com.client
-import datetime
+import datetime, os, win32com.client
 from twilio.rest import TwilioRestClient
 
 if datetime.date.today().weekday() == 4:
@@ -42,8 +41,13 @@ for x in range(1, len(appointments)+1):
 	if appointmentDate > tomorrow:
 		break
 
-with open('calendar_sms.txt') as f:
+# Generating absolute path taken from http://stackoverflow.com/a/18522418/7332445
+filename = 'calendar_sms.txt'
+path, fl = os.path.split(os.path.realpath(__file__))
+full_path = os.path.join(path, filename)
+with open(full_path, "r") as f:
 	data = [str(x.strip()) for x in f.readlines()]
+	
 accountSID = data[0]
 authToken = data[1]
 twilioCli = TwilioRestClient(accountSID, authToken)
