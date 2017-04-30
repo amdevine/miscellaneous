@@ -14,10 +14,11 @@ Personal settings for configuring Sublime Text 3 as a Python IDE.
 
 1. Configure user settings.
 
-  **Preferences ** -> **Settings**
+  **Preferences** -> **Settings**
 
   Copy the following into *Preferences.sublime-settings - User*:
-  ```{
+  ```
+  {
 	"auto_complete_commit_on_tab": true,
 	"color_scheme": "Packages/Color Scheme - Default/IDLE.tmTheme",
 	"font_size": 11,
@@ -25,7 +26,8 @@ Personal settings for configuring Sublime Text 3 as a Python IDE.
 	[
 		"Vintage"
 	]
-}```
+}
+```
 
 1. Configure Anaconda package settings.
 
