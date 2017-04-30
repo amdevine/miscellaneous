@@ -6,17 +6,17 @@ Personal settings for configuring Sublime Text 3 as a Python IDE.
 
 1. Install additional packages. 
 
-  **Tools** -> **Command Palette...** -> type `Package Control: Install Package`. Click on the Package Control: Install Package.
+  - **Tools** -> **Command Palette...** -> type `Package Control: Install Package`. Click on the Package Control: Install Package.
 
-  Install **Anaconda**.
+  - Install **Anaconda**.
 
-  Install **SublimeREPL**
+  - Install **SublimeREPL**
 
 1. Configure user settings.
 
-  **Preferences** -> **Settings**
+  - **Preferences** -> **Settings**
 
-  Copy the following into *Preferences.sublime-settings - User*:
+  - Copy the following into *Preferences.sublime-settings - User*:
   ```
   {
 	"auto_complete_commit_on_tab": true,
@@ -26,8 +26,8 @@ Personal settings for configuring Sublime Text 3 as a Python IDE.
 	[
 		"Vintage"
 	]
-}
-```
+  }
+  ```
 
 1. Configure Anaconda package settings.
 
